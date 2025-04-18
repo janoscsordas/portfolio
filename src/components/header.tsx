@@ -5,9 +5,11 @@ import Link from "next/link";
 import ModeToggle from "./mode-toggle";
 import { MenuIcon, XIcon } from "lucide-react";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <motion.header
@@ -27,7 +29,7 @@ export default function Header() {
                 whileHover={{
                   scale: 1.05,
                 }}
-                className="rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300"
+                className={`rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300 ${pathname === "/" ? "bg-primary text-background" : ""}`}
               >
                 Kezdőlap
               </motion.li>
@@ -37,7 +39,7 @@ export default function Header() {
                 whileHover={{
                   scale: 1.05,
                 }}
-                className="rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300"
+                className={`rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300 ${pathname === "/about" ? "bg-primary text-background" : ""}`}
               >
                 Rólam
               </motion.li>
@@ -47,7 +49,7 @@ export default function Header() {
                 whileHover={{
                   scale: 1.05,
                 }}
-                className="rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300"
+                className={`rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300 ${pathname === "/projects" ? "bg-primary text-background" : ""}`}
               >
                 Projektek
               </motion.li>
@@ -57,7 +59,7 @@ export default function Header() {
                 whileHover={{
                   scale: 1.05,
                 }}
-                className="rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300"
+                className={`rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300 ${pathname === "/contact" ? "bg-primary text-background" : ""}`}
               >
                 Kapcsolat
               </motion.li>
@@ -79,13 +81,13 @@ export default function Header() {
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -300 }}
               transition={{ duration: 0.5 }}
-              className="fixed w-full h-max top-full left-0 bg-background/75 backdrop-blur-sm border-b border-border py-3"
+              className="fixed w-full h-max top-full left-0 bg-background border-b border-border py-3"
             >
               <ul className="flex flex-col gap-1">
-                <Link href="/" className="py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none">Kezdőlap</Link>
-                <Link href="/about" className="py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none">Rólam</Link>
-                <Link href="/projects" className="py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none">Projektek</Link>
-                <Link href="/contact" className="py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none">Kapcsolat</Link>
+                <Link href="/" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/" ? "bg-primary text-background" : ""}`}>Kezdőlap</Link>
+                <Link href="/about" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/about" ? "bg-primary text-background" : ""}`}>Rólam</Link>
+                <Link href="/projects" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/projects" ? "bg-primary text-background" : ""}`}>Projektek</Link>
+                <Link href="/contact" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/contact" ? "bg-primary text-background" : ""}`}>Kapcsolat</Link>
               </ul>
             </motion.div>
           )}

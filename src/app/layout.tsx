@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Csordás János - Portfólió",
-  description: "Csordás János Portfólió weboldala.",
+  description: "Csordás János portfólió weboldala.",
 };
 
 export default function RootLayout({

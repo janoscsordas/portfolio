@@ -104,6 +104,12 @@ export default function Home() {
             <p className="text-muted-foreground text-center font-semibold mt-4">
               És még sok más.
             </p>
+            <div className="text-muted-foreground mt-4 space-y-2">
+              <p>💥 Web alkalmazások fejlesztése, a fenti technológiákkal.</p>
+              <p>💥 Mobil alkalmazások fejlesztése, React Native-al és Expo-val.</p>
+              <p>💥 Backend fejlesztése Node.js-el (Express, Hono), illetve Laravel-el.</p>
+              <p>💥 Integrálás 3. féltől származó szolgáltatásokkal.</p>
+            </div>
           </div>
         </div>
       </section>
