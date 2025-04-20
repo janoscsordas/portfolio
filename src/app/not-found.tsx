@@ -9,6 +9,7 @@ export default function NotFound() {
             <Link 
                 href="/" 
                 className="text-center font-semibold cursor-none py-2 px-4 bg-primary text-background rounded-md mt-3 hover:bg-primary/80 transition-all duration-300"
+                aria-label="Vissza a főoldalra"
             >
                 Vissza a főoldalra
             </Link>

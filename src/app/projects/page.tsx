@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const projects = [
     {
         title: "Planitapp",
-        description: "A Planitapp egy főként csapatoknak szánt feladatkezelő alkalmazás egyéb funkciókkal, amelyekkel a csapatok könnyedén lehet együtt dolgozni.",
+        description: "A Planitapp egy főként csapatoknak szánt feladatkezelő alkalmazás egyéb funkciókkal, amelyekkel a csapatok könnyedén tudnak együtt dolgozni.",
         link: "https://planitapp.hu",
         github: "https://github.com/janoscsordas/planit-vizsgaremek-fullstack"
     },
@@ -28,7 +28,7 @@ export default function Projects() {
                 className="flex flex-col-reverse items-center md:flex-row justify-between gap-10"
             >
                 <div className="max-w-sm">
-                    <img src="/project-image.svg" alt="Projekt Kép" className="w-full h-full object-cover" />
+                    <img loading="lazy" src="/project-image.svg" alt="Projekt Kép" className="w-full h-full object-cover" />
                 </div>
                 <div className="max-w-md">
                     <h1 className="text-3xl font-bold text-center mb-8">Projektek</h1>
@@ -55,10 +55,10 @@ export default function Projects() {
                             <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
                         </div>
                         <div className="flex gap-2 items-center">
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-primary underline cursor-none flex items-center gap-2 p-2 hover:bg-primary/10 rounded-lg w-max transition-all duration-300">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-primary underline cursor-none flex items-center gap-2 p-2 hover:bg-primary/10 rounded-lg w-max transition-all duration-300" aria-label="Link">
                                 <Link className="w-5 h-5" />
                             </a>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-primary underline cursor-none flex items-center gap-2 p-2 hover:bg-primary/10 rounded-lg w-max transition-all duration-300">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-primary underline cursor-none flex items-center gap-2 p-2 hover:bg-primary/10 rounded-lg w-max transition-all duration-300" aria-label="GitHub">
                                 <Github className="w-5 h-5" />
                             </a>
                         </div>
@@ -72,7 +72,7 @@ export default function Projects() {
                 transition={{ duration: 0.5 }}
                 className="mt-8"
             >
-                <a href="https://github.com/janoscsordas" target="_blank" rel="noopener noreferrer" className="cursor-none">
+                <a href="https://github.com/janoscsordas" target="_blank" rel="noopener noreferrer" className="cursor-none" aria-label="GitHub Profil">
                     <button className="text-primary mx-auto font-semibold cursor-none flex items-center gap-2 p-2 hover:bg-primary/10 rounded-lg w-max transition-all duration-300">
                         GitHub Profil
                     </button>

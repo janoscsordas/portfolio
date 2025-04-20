@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex">
           <ul className="flex items-center gap-6">
-            <Link href="/" className="cursor-none">
+            <Link href="/" className="cursor-none" aria-label="Kezdőlap">
               <motion.li
                 whileHover={{
                   scale: 1.05,
@@ -34,7 +34,7 @@ export default function Header() {
                 Kezdőlap
               </motion.li>
             </Link>
-            <Link href="/about" className="cursor-none">
+            <Link href="/about" className="cursor-none" aria-label="Rólam">
               <motion.li
                 whileHover={{
                   scale: 1.05,
@@ -44,7 +44,7 @@ export default function Header() {
                 Rólam
               </motion.li>
             </Link>
-            <Link href="/projects" className="cursor-none">
+            <Link href="/projects" className="cursor-none" aria-label="Projektek">
               <motion.li
                 whileHover={{
                   scale: 1.05,
@@ -54,16 +54,16 @@ export default function Header() {
                 Projektek
               </motion.li>
             </Link>
-            <Link href="/contact" className="cursor-none">
+            <a href="#" className="cursor-none" aria-label="CV Megtekintése">
               <motion.li
                 whileHover={{
                   scale: 1.05,
                 }}
                 className={`rounded-md px-2 py-1 hover:bg-primary hover:text-background transition-all duration-300 ${pathname === "/contact" ? "bg-primary text-background" : ""}`}
               >
-                Kapcsolat
+                CV Megtekintése
               </motion.li>
-            </Link>
+            </a>
             <ModeToggle />
           </ul>
         </nav>
@@ -72,6 +72,7 @@ export default function Header() {
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="rounded-md p-2 cursor-none bg-primary text-background hover:bg-primary/80 transition-all duration-300"
+            aria-label={isMenuOpen ? "Menü bezárása" : "Menü megnyitása"}
           >
             {isMenuOpen ? <XIcon className="w-5 h-5" /> : <MenuIcon className="w-5 h-5" />}
           </button>
@@ -84,10 +85,10 @@ export default function Header() {
               className="fixed w-full h-max top-full left-0 bg-background border-b border-border py-3"
             >
               <ul className="flex flex-col gap-1">
-                <Link href="/" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/" ? "bg-primary text-background" : ""}`}>Kezdőlap</Link>
-                <Link href="/about" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/about" ? "bg-primary text-background" : ""}`}>Rólam</Link>
-                <Link href="/projects" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/projects" ? "bg-primary text-background" : ""}`}>Projektek</Link>
-                <Link href="/contact" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/contact" ? "bg-primary text-background" : ""}`}>Kapcsolat</Link>
+                <Link href="/" aria-label="Kezdőlap" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/" ? "bg-primary text-background" : ""}`}>Kezdőlap</Link>
+                <Link href="/about" aria-label="Rólam" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/about" ? "bg-primary text-background" : ""}`}>Rólam</Link>
+                <Link href="/projects" aria-label="Projektek" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/projects" ? "bg-primary text-background" : ""}`}>Projektek</Link>
+                <a href="#" aria-label="CV Megtekintése" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/contact" ? "bg-primary text-background" : ""}`}>CV Megtekintése</a>
               </ul>
             </motion.div>
           )}

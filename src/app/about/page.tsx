@@ -13,11 +13,11 @@ export default function About() {
                 className="flex flex-col-reverse items-center md:flex-row justify-between gap-10"
             >
                 <div className="max-w-sm">
-                    <img loading="lazy" src="/profile-picture.jpg" alt="Én" className="rounded-full w-full h-full object-cover" />
+                    <img loading="lazy" src="/profile-picture.jpg" aria-label="Én" alt="Én" className="rounded-full w-full h-full object-cover" />
                 </div>
                 <div className="max-w-md">
                     <h1 className="text-3xl font-bold text-center mb-16">Rólam</h1>
-                    <p className="text-muted-foreground text-justify font-semibold">
+                    <p className="text-muted-foreground text-justify font-semibold text-lg">
                         22 éves vagyok, jelenleg Szoftverfejlesztő és Tesztelő szakmát tanulok. Ez a második szakképesítésem; az elsőt Rendszer- és Alkalmazásüzemeltető Technikusként szereztem. Szeretek új dolgokat felfedezni és saját ötleteimet megvalósítani. Emellett szeretek írni, és szívesen olvasok cikkeket különböző témákban.
                     </p>
                 </div>
