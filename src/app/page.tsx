@@ -70,48 +70,48 @@ export default function Home() {
                 <DialogDescription>
                   Itt vagyok elérhető
                 </DialogDescription>
-                <div className="space-y-4 mt-5">
-                  <div className="flex items-start">
-                    <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
-                    <div>
-                      <p className="font-medium">Email</p>
-                      <a
-                        href="mailto:janoscsordas@protonmail.com"
-                        className="text-sm text-muted-foreground hover:underline hover:text-primary"
-                        aria-label="Email"
-                      >
-                        janoscsordas@protonmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
-                    <div>
-                      <p className="font-medium">Gmail</p>
-                      <a
-                        href="mailto:janoscsordas072@gmail.com"
-                        className="text-sm text-muted-foreground hover:underline hover:text-primary"
-                        aria-label="Gmail"
-                      >
-                        janoscsordas072@gmail.com
-                      </a>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
-                    <div>
-                      <p className="font-medium">Telefon</p>
-                      <a
-                        href="tel:+36205038807"
-                        className="text-sm text-muted-foreground hover:underline hover:text-primary"
-                        aria-label="Telefon"
-                      >
-                        +36 20 503 8807
-                      </a>
-                    </div>
+              </DialogHeader>
+              <div className="space-y-4 mt-5">
+                <div className="flex items-start">
+                  <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
+                  <div>
+                    <p className="font-medium">Email</p>
+                    <a
+                      href="mailto:janoscsordas@protonmail.com"
+                      className="text-sm text-muted-foreground hover:underline hover:text-primary"
+                      aria-label="Email"
+                    >
+                      janoscsordas@protonmail.com
+                    </a>
                   </div>
                 </div>
-              </DialogHeader>
+                <div className="flex items-start">
+                  <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
+                  <div>
+                    <p className="font-medium">Gmail</p>
+                    <a
+                      href="mailto:janoscsordas072@gmail.com"
+                      className="text-sm text-muted-foreground hover:underline hover:text-primary"
+                      aria-label="Gmail"
+                    >
+                      janoscsordas072@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-start">
+                  <Mail className="h-5 w-5 mr-3 mt-0.5 text-muted-foreground" />
+                  <div>
+                    <p className="font-medium">Telefon</p>
+                    <a
+                      href="tel:+36205038807"
+                      className="text-sm text-muted-foreground hover:underline hover:text-primary"
+                      aria-label="Telefon"
+                    >
+                      +36 20 503 8807
+                    </a>
+                  </div>
+                </div>
+              </div>
             </DialogContent>
           </Dialog>
           <div className="flex items-center gap-3 mt-5">
