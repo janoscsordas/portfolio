@@ -31,7 +31,7 @@ export default function About() {
                     <div className="bg-background rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
                     <h3 className="text-xl font-semibold mb-2">💡 Érdeklődési körök</h3>
                     <ul className="list-disc list-inside text-muted-foreground">
-                        <li>Webfejlesztés</li>
+                        <li>Szoftverfejlesztés (Webfejlesztés)</li>
                         <li>Linux és körülötte lévő technológiák</li>
                         <li>Későbbiekben blog írása</li>
                     </ul>
@@ -40,7 +40,8 @@ export default function About() {
                     <div className="bg-background rounded-2xl p-6 shadow-lg hover:shadow-xl transition">
                     <h3 className="text-xl font-semibold mb-2">⚙️ Kedvenc technológiák</h3>
                     <ul className="list-disc list-inside text-muted-foreground">
-                        <li>Next.js & React</li>
+                        <li>React</li>
+                        <li>Laravel</li>
                         <li>Tailwind CSS</li>
                         <li>TypeScript</li>
                     </ul>

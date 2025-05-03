@@ -54,7 +54,7 @@ export default function Header() {
                 Projektek
               </motion.li>
             </Link>
-            <a href="#" className="cursor-none" aria-label="CV Megtekintése">
+            <a href="https://drive.google.com/file/d/1uUbIAI_lfac3MKnM3KTG9RCz1GLO9R34/view?usp=sharing" className="cursor-none" aria-label="CV Megtekintése">
               <motion.li
                 whileHover={{
                   scale: 1.05,
@@ -88,7 +88,7 @@ export default function Header() {
                 <Link href="/" aria-label="Kezdőlap" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/" ? "bg-primary text-background" : ""}`}>Kezdőlap</Link>
                 <Link href="/about" aria-label="Rólam" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/about" ? "bg-primary text-background" : ""}`}>Rólam</Link>
                 <Link href="/projects" aria-label="Projektek" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/projects" ? "bg-primary text-background" : ""}`}>Projektek</Link>
-                <a href="#" aria-label="CV Megtekintése" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/contact" ? "bg-primary text-background" : ""}`}>CV Megtekintése</a>
+                <a href="https://drive.google.com/file/d/1uUbIAI_lfac3MKnM3KTG9RCz1GLO9R34/view?usp=sharing" aria-label="CV Megtekintése" className={`py-2 px-4 hover:bg-primary hover:text-background transition-all duration-300 cursor-none ${pathname === "/contact" ? "bg-primary text-background" : ""}`}>CV Megtekintése</a>
               </ul>
             </motion.div>
           )}
