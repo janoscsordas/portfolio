@@ -51,7 +51,7 @@ export default function Home() {
           <p className="text-muted-foreground text-base md:text-xl leading-relaxed font-semibold max-w-lg mb-4">
             A nevem{" "}
             <span className="text-primary font-mono">Csordás János</span>.
-            Szoftverfejlesztőnek tanulok, emellett saját projektekkel
+            Szoftverfejlesztő- és Tesztelő szakmát végeztem. Jelenleg állást keresek, emellett saját projektekkel
             foglalkozom.
           </p>
           <Dialog>

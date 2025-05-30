@@ -18,7 +18,7 @@ export default function About() {
                 <div className="max-w-md">
                     <h1 className="text-3xl font-bold text-center mb-16">Rólam</h1>
                     <p className="text-muted-foreground text-justify font-semibold text-lg">
-                        22 éves vagyok, jelenleg Szoftverfejlesztő és Tesztelő szakmát tanulok. Ez a második szakképesítésem; az elsőt Rendszer- és Alkalmazásüzemeltető Technikusként szereztem. Szeretek új dolgokat felfedezni és saját ötleteimet megvalósítani. Emellett szeretek írni, és szívesen olvasok cikkeket különböző témákban.
+                        22 éves vagyok, Szoftverfejlesztő és Tesztelő szakmát végeztem a 2024-25ös tanévben. Ez a második szakképesítésem; az elsőt Rendszer- és Alkalmazásüzemeltető Technikusként szereztem. Szeretek új dolgokat felfedezni és saját ötleteimet megvalósítani. Emellett szeretek írni, és szívesen olvasok cikkeket különböző témákban.
                     </p>
                 </div>
             </motion.section>
